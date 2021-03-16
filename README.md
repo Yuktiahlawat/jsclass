@@ -1,0 +1,2 @@
+# jsclass
+class practical

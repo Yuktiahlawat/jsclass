@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parameter Passing In And Out </title>
+</head>
+<body>
+	<button onclick="sum(10,20)">value</button>
+	<ul>
+		<li> Pass By Value</li>
+		<p id="pass"></p>
+		<li>Pass By reference</li>
+		<p id="value"></p>
+	</ul>
+	<script type="text/javascript">
+		result=20;
+		function sum(a,b) {
+		result=a+b;
+		person=(name+"local for sum");
+		console.log(result+"local for sum");
+		console.log(reference(person))	;
+				// body...
+		}
+		function reference(person){
+			console.log(result+"local for reference");
+			return person.name;
+		}
+		console.log(result+"global");
+	</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Accessing Document Elements </title>
+</head>
+<body>
+<h2 > CALCULATE  <h2>
+<form name="myform">
+<input type="text" name="fst"><br>
+<input type="text" name="snd"><br>
+<input type="button" name="" value="ADD" onclick="add()">
+<input type="button" name="" value="Subtract" onclick="sub()">
+
+</form>
+<script>
+function add() {
+fst=parseInt(myform.fst.value);
+snd=parseInt(myform.snd.value);
+result=fst+snd;
+myform.result.value=result;
+}
+function sub() {
+fst=parseInt(myform.fst.value);
+snd=parseInt(myform.snd.value);
+result=fst-snd;
+myform.result.value=result;
+}
+var a= document.URL;
+console.log(a);
+var b= document.body;
+console.log(b);
+var c= document.forms;
+console.log(c);
+var d= document.getElementsByTagName('script');
+console.log(d);
+var e= document.getElementsByTagName('forms').innerText="wow";
+console.log(e);
+</script>
+<body>
+<html>
